@@ -18,26 +18,29 @@
           <h1>Weather Dashboard</h1>
         </div>
     </header>
-    <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </nav>
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action"> Cras justo odio</a>
-        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-        <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-    </div>
 
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+            <div>
+                <h2 class="card-header bg-white">Search for a city</h2>
+            </div>
+            <nav class="navbar navbar-light bg-white">
+                <form id="search-box" class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
 
-
-
-
-
-
+        <div id="weather" class="col-12 col-md-8">
+            <h2 class="city"><span id="result-text"></span></h2>
+            <div id="result-content" class="temp"></div>
+            <img src="" alt="" class="icon"><img/>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+        </div>
+    </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
